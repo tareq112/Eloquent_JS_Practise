@@ -9,9 +9,9 @@ triangle:
 #######
 */
 
-for(let i = '#'; i.length < 7; i+= '#'){
+for (let i = '#'; i.length < 7; i += '#') {
     console.log(i);
-    
+
 }
 
 /*
@@ -26,10 +26,26 @@ for numbers divisible by only one of those).
 a significant percentage of programmer candidates. So if you solved it, your
 labor market value just went up.)
 */
+//print 1 - 100
+//cond1: num % 3 print "Fizz"
+//cond2: num % 5 but not 3 print "Buzz"
+//cond3: num %3 && num % 5 print "FizzBuzz"
+
+for (let i = 1; i <= 100; i++) {
+
+    let output = "";
+    if (i % 3 == 0) {
+        output += "Fizz";
+    }
+    if (i % 5 == 0) { 
+        output += "Buzz"; 
+    }
+    console.log(output || i);
+
+}
 
 
-
-/* 
+/*
 Chessboard
 Write a program that creates a string that represents an 8×8 grid, using newline
 characters to separate lines. At each position of the grid there is either a space
