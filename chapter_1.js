@@ -37,8 +37,8 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 == 0) {
         output += "Fizz";
     }
-    if (i % 5 == 0) { 
-        output += "Buzz"; 
+    if (i % 5 == 0) {
+        output += "Buzz";
     }
     console.log(output || i);
 
@@ -63,3 +63,24 @@ When you have a program that generates this pattern, define a binding size
 = 8 and change the program so that it works for any size, outputting a grid
 of the given width and height.
 */
+
+/*for (let i = '_'; i.length < 8; i += '_') {
+    for (let j = '#'; j.length < 8; j += '#')
+    console.log( i + j );
+
+}*/
+const arr = [];
+let output = "";
+for (let i = 0; i < 8; i++) {
+    for(let j = 0; j< 8 ; j++){
+        if ([i][j] % 2 == 0) {
+            output += "_";
+        }
+        else{
+            output += '#';
+            
+        }
+    }
+    output+= '\n';
+   }
+   console.log(output);
