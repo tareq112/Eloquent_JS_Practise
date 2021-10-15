@@ -71,3 +71,14 @@ console.log(countBs('kakkerlak','k'));
 // → 4
 let numbers = [5, 1, 7];
 console.log(Math.max(...numbers));
+function randomPointOnCircle(radius) {
+    let angle = Math.random() * 2 * Math.PI;
+    return {x: radius * Math.cos(angle),
+    y: radius * Math.sin(angle)};
+    }
+    console.log(randomPointOnCircle(2));
+    // → {x: 0.3667, y: 1.966}
+    
+    let ran = Math.random();
+    console.log(ran);
+    
