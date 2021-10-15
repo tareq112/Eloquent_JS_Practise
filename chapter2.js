@@ -69,3 +69,5 @@ console.log(countBs('BBC','B'));
 // → 2
 console.log(countBs('kakkerlak','k'));
 // → 4
+let numbers = [5, 1, 7];
+console.log(Math.max(...numbers));
